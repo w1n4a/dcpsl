@@ -33,6 +33,8 @@ DCPSL v1.0 completely abolishes corporate gatekeeping and the commodification of
 ### 3. "From Each According to His Ability..."
 We reject managers and hierarchy. Every comrade who submits a patch, adds a widget, or fixes a bug automatically gains equal status as a co-author of the entire unified system. The code exists solely for the collective progress of humankind, completely immune to capitalist misappropriation.
 
+⚠️ Important Notice: By submitting a Pull Request to this repository, you explicitly and unconditionally agree that your contribution is socialized under the terms of the DCPSL v1.0 license and becomes part of the indivisible collective asset.
+
 ---
 
 <p align="center">
