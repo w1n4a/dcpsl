@@ -1,5 +1,11 @@
 ---
 
+<p align="center">
+  <img src="banner.png" alt="BANNER" width="600">
+</p>
+
+---
+
 ## 🌍 License and Philosophy: Open Collective Work (DCPSL v1.0)
 
 This project is built and developed on the principles of digital communism, peer-to-peer cooperation, and absolute equality!
