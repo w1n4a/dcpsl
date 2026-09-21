@@ -1,7 +1,7 @@
 ---
 
 <p align="center">
-  <img src="banner.png" alt="BANNER" width="600">
+  <img src="logo.png" alt="LOGO" width="600">
 </p>
 
 ---
@@ -15,14 +15,6 @@ This project is built and developed on the principles of digital communism, peer
 * **No Censorship or Gatekeeping:** Got a cool new feature or widget? Edit the code and push it directly. The system automatically merges safe contributions into the core, making them immediate collective assets of humankind.
 
 The full legal text of the contract is available in the [LICENSE](./LICENSE) file. Join the Digital Communist Party of Software! 🚩
-
----
-
-<p align="center">
-  <img src="logo.png" alt="LOGO" width="600">
-</p>
-
----
 
 ```text
                 DIGITAL COMMUNIST PARTY SOFTWARE LICENSE (DCPSL)
