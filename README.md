@@ -1,3 +1,15 @@
+---
+
+## 🌍 License and Philosophy: Open Collective Work (DCPSL v1.0)
+
+This project is built and developed on the principles of digital communism, peer-to-peer cooperation, and absolute equality!
+
+* **True Equality:** We reject corporate hierarchies and managers. Every comrade who contributes, patches, or refactors the code automatically becomes a full and equal co-author of the unified project.
+* **Protection from Capitalist Misappropriation:** Our code is socialized under a strict reciprocity rule. Any attempt by commercial monopolies to steal our work, close the source, or hide it behind paywalls automatically voids their license, turning them into software pirates liable for immediate legal action and severe financial penalties.
+* **No Censorship or Gatekeeping:** Got a cool new feature or widget? Edit the code and push it directly. The system automatically merges safe contributions into the core, making them immediate collective assets of humankind.
+
+The full legal text of the contract is available in the [LICENSE](./LICENSE) file. Join the Digital Communist Party of Software! 🚩
+
 ```text
                 DIGITAL COMMUNIST PARTY SOFTWARE LICENSE (DCPSL)
                        Version 1.0 — September 2026
