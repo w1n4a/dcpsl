@@ -16,6 +16,23 @@ This project is built and developed on the principles of digital communism, peer
 
 The full legal text of the contract is available in the [LICENSE](./LICENSE) file. Join the Digital Communist Party of Software! 🚩
 
+Проверка автоматизации
+
+---
+
+## 🚩 Theoretical & Economic Foundation (TEO)
+
+### 1. The Crisis of Capitalist Open Source
+Modern open-source licenses (MIT, Apache, BSD) are broken. They simulate freedom but act as tools for capital accumulation. Corporations extract free labor from thousands of independent open-source developers, package it into proprietary clouds, and lock it behind subscription paywalls. This is the **alienation of digital labor**. 
+
+### 2. Cyber-Communism & Code Socialization
+DCPSL v1.0 completely abolishes corporate gatekeeping and the commodification of code through two core principles:
+* **The Software Trust:** All contributions lose their fractional individual ownership and merge into an *indivisible collective asset* managed by the Mutual Aid Fund. You cannot "buy out" or "privatize" a piece of this repository.
+* **Strict Copyleft Counter-Attack:** Under Article 2.2, anyone can use our code, but if a commercial monopoly attempts to encapsulate it inside a closed ecosystem, their license is instantly revoked. They become software pirates liable for severe financial and court penalties (Astraint).
+
+### 3. "From Each According to His Ability..."
+We reject managers and hierarchy. Every comrade who submits a patch, adds a widget, or fixes a bug automatically gains equal status as a co-author of the entire unified system. The code exists solely for the collective progress of humankind, completely immune to capitalist misappropriation.
+
 ---
 
 <p align="center">
