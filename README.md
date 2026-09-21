@@ -16,6 +16,14 @@ This project is built and developed on the principles of digital communism, peer
 
 The full legal text of the contract is available in the [LICENSE](./LICENSE) file. Join the Digital Communist Party of Software! 🚩
 
+---
+
+<p align="center">
+  <img src="banner.png" alt="LOGO" width="600">
+</p>
+
+---
+
 ```text
                 DIGITAL COMMUNIST PARTY SOFTWARE LICENSE (DCPSL)
                        Version 1.0 — September 2026
