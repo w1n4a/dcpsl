@@ -24,17 +24,6 @@ jobs:
           git config --global user.name "Commune Automation Bot"
           git config --global user.email "bot@digital-commune.local"
 
-      - name: Update Authors List
-        run: |
-          PR_AUTHOR="${{ github.event.pull_request.user.login }}"
-          README_FILE="README.md"
-          
-          if [ -f "$README_FILE" ] && ! grep -q "@$PR_AUTHOR" "$README_FILE"; then
-            echo -e "\n* **Comrade [@$PR_AUTHOR](https://github.com)** joined the commune!" >> "$README_FILE"
-            git add "$README_FILE"
-            git commit -m "Add @$PR_AUTHOR to contributors list"
-          fi
-
       - name: Fetch and Merge PR Branch
         run: |
           git remote add fork ${{ github.event.pull_request.head.repo.clone_url }}
