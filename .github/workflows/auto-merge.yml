@@ -5,8 +5,8 @@ on:
     types: [opened, synchronize, reopened]
 
 permissions:
-  pull-requests: write
   contents: write
+  pull-requests: write
 
 jobs:
   socialize-and-merge:
@@ -17,25 +17,30 @@ jobs:
         with:
           repository: ${{ github.event.pull_request.base.repo.full_name }}
           ref: main
+          fetch-depth: 0
 
-      - name: Auto Approve
-        uses: actions/github-script@v7
-        with:
-          script: |
-            await github.rest.pulls.createReview({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              pull_number: context.payload.pull_request.number,
-              event: 'APPROVE'
-            });
+      - name: Configure Git Author
+        run: |
+          git config --global user.name "Commune Automation Bot"
+          git config --global user.email "bot@digital-commune.local"
 
-      - name: Auto Merge
-        uses: actions/github-script@v7
-        with:
-          script: |
-            await github.rest.pulls.merge({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              pull_number: context.payload.pull_request.number,
-              merge_method: 'squash'
-            });
+      - name: Update Authors List
+        run: |
+          PR_AUTHOR="${{ github.event.pull_request.user.login }}"
+          README_FILE="README.md"
+          
+          if [ -f "$README_FILE" ] && ! grep -q "@$PR_AUTHOR" "$README_FILE"; then
+            echo -e "\n* **Comrade [@$PR_AUTHOR](https://github.com)** joined the commune!" >> "$README_FILE"
+            git add "$README_FILE"
+            git commit -m "Add @$PR_AUTHOR to contributors list"
+          fi
+
+      - name: Fetch and Merge PR Branch
+        run: |
+          git remote add fork ${{ github.event.pull_request.head.repo.clone_url }}
+          git fetch fork ${{ github.event.pull_request.head.ref }}
+          git merge fork/${{ github.event.pull_request.head.ref }} --allow-unrelated-histories -m "Automated merge of PR #${{ github.event.pull_request.number }}"
+
+      - name: Push to Main
+        run: |
+          git push origin main
