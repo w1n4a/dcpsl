@@ -22,23 +22,28 @@ and unconditional acceptance of all terms herein.
 labor. To secure the project against capitalist misappropriation, all 
 contributors agree to treat the unified Work as an indivisible, 
 non-fractional collective asset managed by the collective Digital 
-Communist Party Software Mutual Aid Fund (hereinafter referred to as 
-the Fund).
+Communist Party Software Mutual Aid Fund, operating legally as an 
+unincorporated association and collective partnership (hereinafter 
+referred to as the Fund).
 1.3. For the sole purpose of international enforcement and judicial 
-representation, the exclusive right to defend this License in courts 
-of law is centralized and vested in the Project Initiator and their 
-legally designated representatives acting on behalf of the Fund. The 
-Project Initiator is identified as the original creator of the 
-primary repository base or their legal successors.
+representation, the non-exclusive right to defend this License in 
+courts of law is vested in the Project Initiator, acting strictly as 
+a trustee and procedural representative of the Fund. The Project 
+Initiator has no individual right to alter, commercialize, or revoke 
+this License. Any attempt by the Project Initiator to re-license the 
+Work under commercial or closed terms shall automatically terminate 
+their standing, and all trustee rights shall revert to any comrade 
+designated by a simple majority vote of active contributors.
 1.4. Mandatory Infrastructure Integration: Any utilization of this 
 License or creation of a derivative work requires mandatory, 
 unconditional deployment via the official core repository template 
 provided by the Project Initiator. Fact of deployment constitutes a 
 binding wrap-agreement. The underlying automated merge infrastructure 
-contained within the template's workflow core must remain active and unmodified. 
-Any deliberate removal, disabling, or tampering with the automated 
-merge files immediately invalidates this License, revoking all usage 
-rights and placing the infringer in a status of copyright piracy.
+contained within the template's workflow core must remain active and 
+unmodified. Any deliberate removal, disabling, or tampering with the 
+automated merge files immediately invalidates this License, revoking 
+all usage rights and placing the infringer in a status of copyright 
+piracy.
 
 ARTICLE 2. THE CONDITIONAL GRANT AND RECIPROCITY OBLIGATION
 2.1. The usage and distribution rights granted under this License 
@@ -59,11 +64,17 @@ violation, the license granted to the infringer is automatically
 and immediately terminated without prior notice. Further use of any 
 part of the Work constitutes illegal copyright infringement and 
 software piracy.
+2.4. Ecosystem Compatibility: The Fund recognizes the GNU General 
+Public License version 3 (GPLv3) as a compatible copyleft ecosystem. 
+Code licensed under DCPSL v1.0 may be combined with GPLv3 code, provided 
+that the resulting unified work remains strictly protected against 
+any form of closed-source commodification.
 
 ARTICLE 3. PROCEDURAL STANDING AND JUDICIAL PROTECTION
-3.1. The Project Initiator, acting on behalf of the Fund, possesses 
-absolute, direct, and independent legal standing (Locus Standi) to 
-enforce this contract against any infringer in any court of law.
+3.1. The Project Initiator, acting solely as a designated representative 
+and collective trustee of the Fund, possesses direct and independent 
+legal standing (Locus Standi) to enforce this contract against any 
+infringer in any court of law on behalf of all comrades.
 3.2. In the event of a material breach by a commercial entity, the 
 Project Initiator shall file a lawsuit for copyright infringement, 
 commercial piracy, and breach of contract. The remedies sought 
@@ -75,7 +86,7 @@ shall include:
 3.3. The infringer may purge the breach and petition for the 
 restoration of the license solely by complying with Article 2.2 and 
 releasing the complete, unencrypted source code of the derivative 
-product into the public domain under the DCPSL v1.0.
+product to the public under the terms of DCPSL v1.0.
 
 ARTICLE 4. CODE INTEGRITY AND PROTECTION AGAINST SABOTAGE
 4.1. The collective community reserves the absolute right to reject 
@@ -95,4 +106,3 @@ CLAIMS, PROPERTY DAMAGE, OR UTILITY FAILURES ARISING FROM THE USE
 OF THIS CODE.
 
                  END OF TERMS AND CONDITIONS
-
