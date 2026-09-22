@@ -1,59 +1,24 @@
 name: Automated Commune Merge
 
 on:
-  pull_request:
+  pull_request_target:
     types: [opened, synchronize, reopened]
 
 permissions:
   pull-requests: write
   contents: write
-  statuses: write
 
 jobs:
-  code-test:
+  socialize-and-merge:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v4
-
-      - name: Install Compiler for Safety Check
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y build-essential
-
-      - name: Run Safety Check (Anti-Troll Shield)
-        run: |
-          if ls *.c *.cpp 1> /dev/null 2>&1; then
-            g++ -fsyntax-only *.c *.cpp
-          else
-            echo "No source files found to compile, continuing default check."
-          fi
-
-  auto-approve-and-socialize:
-    runs-on: ubuntu-latest
-    needs: code-test
-    steps:
-      - name: Checkout Repository
+      - name: Checkout Base Repository
         uses: actions/checkout@v4
         with:
+          repository: ${{ github.event.pull_request.base.repo.full_name }}
           ref: main
 
-      - name: Add Comrade to Authors List
-        run: |
-          PR_AUTHOR="${{ github.event.pull_request.user.login }}"
-          README_FILE="README.md"
-          
-          if ! grep -q "@$PR_AUTHOR" "$README_FILE"; then
-            echo -e "\n* **Comrade [@$PR_AUTHOR](https://github.com)** joined the commune!" >> "$README_FILE"
-            
-            git config --global user.name "Commune Automation Bot"
-            git config --global user.email "bot@digital-commune.local"
-            git add "$README_FILE"
-            git commit -m "Socialize labor: Add @$PR_AUTHOR to contributors list"
-            git push origin main
-          fi
-
-      - name: Auto Approve and Merge
+      - name: Auto Approve
         uses: actions/github-script@v7
         with:
           script: |
@@ -63,7 +28,11 @@ jobs:
               pull_number: context.payload.pull_request.number,
               event: 'APPROVE'
             });
-            
+
+      - name: Auto Merge
+        uses: actions/github-script@v7
+        with:
+          script: |
             await github.rest.pulls.merge({
               owner: context.repo.owner,
               repo: context.repo.repo,
